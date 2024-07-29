@@ -1,20 +1,20 @@
-import './App.css'
-import Home from './components/pages/home/Home'
-import Navbar from './components/pages/layout/Navbar'
-import Services from './components/pages/home/Services'
+import { Route, Routes } from 'react-router-dom'
+import MainHome from './components/pages/home/MainHome'
 import GetInTouch from './components/pages/home/GetInTouch'
+import Footer from './components/pages/layout/Footer'
 
 const App = () => {
+  return (
+  <>
+    <Routes>
+      <Route path="/" element={<MainHome />} />
+      <Route path="/contact-us" element={<GetInTouch />} />
+    </Routes>
 
-  return <section>
-    <Navbar />
-
-    <Home />
-
-    <Services />
-
-    <GetInTouch />
-  </section>
+    <Footer />
+  </>
+  )
 }
+
 
 export default App
