@@ -13,8 +13,8 @@ const Footer = () => {
 
 const ExtraFooter = () => {
   return (
-    <Row gutter={8} align="middle" className="text-white font-semibold">
-      <Col span={8}>
+    <Row gutter={8} justify="center" align="middle" className="text-white font-semibold">
+      <Col sm={24} md={8}>
         <Row justify="center">
           <label>
             ©2024 BeRadStudios
@@ -22,7 +22,7 @@ const ExtraFooter = () => {
         </Row>
       </Col>
 
-      <Col span={8}>
+      <Col sm={24} md={8}>
         <Row justify="space-around" gutter={8}>
           <Col>
             <label>
@@ -38,7 +38,7 @@ const ExtraFooter = () => {
         </Row>
       </Col>
 
-      <Col span={8}>
+      <Col sm={24} md={8}>
         <Row justify="center" gutter={16}>
           <Col>
             <FaInstagram className="w-6 h-6 hover:cursor-pointer" />

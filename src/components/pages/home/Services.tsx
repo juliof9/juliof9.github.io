@@ -27,7 +27,7 @@ interface ServiceDetails {
 
 const Service = ({ title, label, urlImg }: ServiceDetails) => (
   <div>
-    <img className="object-cover h-96 w-96 rounded-3xl transition duration-300 ease-out hover:-translate-y-1 hover:scale-75" src={urlImg} alt={urlImg} />
+    <img className="object-cover h-80 w-80 sm:h-96 sm:w-96 rounded-3xl transition duration-300 ease-out hover:-translate-y-1 hover:scale-75" src={urlImg} alt={urlImg} />
 
     <h3 className="text-2xl text-center font-bold py-2 text-service-color">{title}</h3>
 

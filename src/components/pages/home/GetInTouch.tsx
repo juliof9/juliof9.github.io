@@ -46,8 +46,8 @@ const GetInTouch = () => {
 
   return (
     <>
-      <nav className="lg:block fixed top-0 left-0 right-0 text-white bg-black px-10 py-2 z-10">
-        <Row align="middle">
+      <nav className="block fixed top-0 left-0 right-0 text-white bg-black px-10 py-2 z-10">
+        <Row align="middle" className="flex justify-center lg:justify-start">
           <Col>
             <Link to='/'>
               <MdHomeFilled style={{ fontSize: 35 }} />
@@ -65,15 +65,15 @@ const GetInTouch = () => {
           onFinish={onSubmit}
         >
           <Row justify="center">
-            <Col span={12}>
-              <h2 className="text-8xl font-extrabold text-white text-justify">
+            <Col span={20} lg={12}>
+              <h2 className="text-4xl md:text-6xl lg:text-8xl font-extrabold text-white sm:text-justify">
                 Be a partner with us, Be Rad Studios
               </h2>
             </Col>
           </Row>
 
           <Row justify="center" className="mt-12">
-            <Col span={6} className="px-2">
+            <Col span={20} md={10} lg={6} className="px-2">
               <label className="text-white">Nombres</label>
 
               <Form.Item name="name" {...config}>
@@ -81,7 +81,7 @@ const GetInTouch = () => {
               </Form.Item>
             </Col>
 
-            <Col span={6} className="px-2">
+            <Col span={20} md={10} lg={6} className="px-2">
               <label className="text-white">Apellidos</label>
   
               <Form.Item name="lastname" {...config}>
@@ -91,14 +91,14 @@ const GetInTouch = () => {
           </Row>
 
           <Row justify="center">
-          <Col span={6} className="px-2">
+          <Col span={20} md={10} lg={6} className="px-2">
             <label className="text-white">Correo</label>
               <Form.Item name="email" {...config}>
                 <Input className="h-10" />
               </Form.Item>
             </Col>
 
-            <Col span={6} className="px-2">
+            <Col span={20} md={10} lg={6} className="px-2">
               <label className="text-white">Número de contacto</label>
               <Form.Item name="phoneNumber" {...config}>
                 <Input className="h-10" />
@@ -107,7 +107,7 @@ const GetInTouch = () => {
           </Row>
 
           <Row justify="center">
-            <Col span={12} className="px-2">
+            <Col span={20} lg={12} className="px-2">
               <label className="text-white">¿Qué quieres mejorar?</label>
               
               <Form.Item name="description" {...config}>
@@ -116,7 +116,7 @@ const GetInTouch = () => {
             </Col>
           </Row>
 
-          <Row justify="center">
+          <Row justify="center" className="pb-8">
             <Col span={6}>
               <Row justify="center">
                 <Button
