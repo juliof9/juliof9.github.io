@@ -35,8 +35,6 @@ const GetInTouch = () => {
   const onSubmit = async (formData: formProps) => {
     setLoading(true)
 
-    console.log('any', formData)
-
     const response = await sendNewEmail(formData)
 
     onFinish(response)
