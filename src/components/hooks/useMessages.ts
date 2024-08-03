@@ -24,6 +24,6 @@ const useMessages = () => {
   return {
     sendNewEmail
   }
-}
+} 
 
 export default useMessages

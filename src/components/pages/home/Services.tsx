@@ -1,9 +1,9 @@
-import image3 from '../../../../public/assets/images/services/dev.jpg'
-import image5 from '../../../../public/assets/images/services/seo.jpg'
-import image4 from '../../../../public/assets/images/services/call.jpg'
-import image1 from '../../../../public/assets/images/services/blog.jpg'
-import image2 from '../../../../public/assets/images/services/server.jpg'
-import image6 from '../../../../public/assets/images/services/consulting.jpg'
+import image3 from '../../../assets/images/services/dev.jpg'
+import image5 from '../../../assets/images/services/seo.jpg'
+import image4 from '../../../assets/images/services/call.jpg'
+import image1 from '../../../assets/images/services/blog.jpg'
+import image2 from '../../../assets/images/services/server.jpg'
+import image6 from '../../../assets/images/services/consulting.jpg'
 
 const Services = () => {
   return (
