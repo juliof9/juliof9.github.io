@@ -6,22 +6,22 @@ const Navbar = () => (
     <div className="flex justify-end items-center">
       <ul className="flex space-x-1 md:space-x-4 lg:space-x-10">
         <Option
-          label="Home"
+          label="INICIO"
           redirectTo="#home"
         />
         <Option
-          label="About Us"
+          label="SOBRE NOSOTROS"
           redirectTo="#about-us"
         />
 
         <Option
           isLink
-          label="Get In Touch"
+          label="CONTÁCTANOS"
           redirectTo="/contact-us"
         />
         
         <Option
-          label="Services"
+          label="SERVICIOS"
           redirectTo="#services"
         />
       </ul>

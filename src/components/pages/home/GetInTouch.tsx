@@ -65,7 +65,7 @@ const GetInTouch = () => {
           <Row justify="center">
             <Col span={20} lg={12}>
               <h2 className="text-4xl md:text-6xl lg:text-8xl font-extrabold text-white sm:text-justify">
-                Be a partner with us, Be Rad Studios
+                Se un partner, conviértete en Be Rad Studios
               </h2>
             </Col>
           </Row>

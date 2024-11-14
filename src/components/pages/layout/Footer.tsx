@@ -1,5 +1,6 @@
 import { Col, Row } from "antd"
 import { FaFacebookSquare, FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa"
+import { Link } from "react-router-dom"
 
 const Footer = () => {
   return (
@@ -31,9 +32,11 @@ const ExtraFooter = () => {
           </Col>
 
           <Col>
-            <label>
-              GIRONFLORES26@GMAIL.COM
-            </label>
+            <Link to="/contact-us">
+              <p className="cursor-pointer text-xs font-bold uppercase">
+                j.flores@beradst.com
+              </p>
+            </Link>
           </Col>
         </Row>
       </Col>
@@ -60,5 +63,19 @@ const ExtraFooter = () => {
     </Row>
   )
 }
+
+// type MailProps = {
+//   email: string,
+//   subject: string,
+//   body: string,
+// }
+
+// const Mailto = ({ email, subject = '', body = '' }: MailProps) => {
+//   let params = subject || body ? '?' : '';
+//   if (subject) params += `subject=${encodeURIComponent(subject)}`;
+//   if (body) params += `${subject ? '&' : ''}body=${encodeURIComponent(body)}`;
+
+//   return <a href={`mailto:${email}${params}`} />;
+// };
 
 export default Footer
