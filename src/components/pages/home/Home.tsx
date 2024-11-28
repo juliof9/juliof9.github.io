@@ -1,6 +1,6 @@
 const Home = () => {
   return (
-    <section className="h-dvh mt-12 p-10 md:pt-48 bg-home-background bg-cover" id="home">
+    <section className="h-dvh mt-16 p-10 md:pt-48 bg-home-background bg-cover" id="home">
       <h1 className="text-5xl md:text-8xl text-center md:text-left font-extrabold text-white pb-10">
         Crea. Construye. Mejora.
       </h1>
