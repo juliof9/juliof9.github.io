@@ -27,7 +27,7 @@ jobs:
         run: ls -la ./dist
 
       - name: Upload production-ready build files
-        uses: actions/upload-artifact@v3.1.0
+        uses: actions/upload-artifact@v3
         with:
           name: production-files
           path: ./dist
