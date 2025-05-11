@@ -54,7 +54,7 @@ const GetInTouch = () => {
         </Row>
       </nav>
 
-      <section className="pt-20 font-semibold bg-home-background">
+      <section className="py-20 font-semibold bg-home-background">
         <Form
           form={form}
           layout="vertical"

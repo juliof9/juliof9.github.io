@@ -1,8 +1,7 @@
 import { Link } from "react-router-dom"
 
-// Guardar repositorio como .io (myUserName.github.io) para probar el sitio web ya subido con un dominio
 const Navbar = () => (
-  <nav className="lg:block fixed top-0 left-0 right-0 text-white bg-black h-16 px-2 sm:px-20 z-10">
+  <nav className="lg:block fixed top-0 left-0 right-0 text-white bg-black bg-opacity-80 h-16 px-2 backdrop-blur-md z-50">
     <div className="flex justify-end items-center">
       <ul className="flex space-x-1 md:space-x-4 lg:space-x-10">
         <Option
@@ -10,7 +9,7 @@ const Navbar = () => (
           redirectTo="#home"
         />
         <Option
-          label="SOBRE NOSOTROS"
+          label="NOSOTROS"
           redirectTo="#about-us"
         />
 
@@ -19,7 +18,7 @@ const Navbar = () => (
           label="CONTÁCTANOS"
           redirectTo="/contact-us"
         />
-        
+
         <Option
           label="SERVICIOS"
           redirectTo="#services"
@@ -28,7 +27,7 @@ const Navbar = () => (
     </div>
   </nav>
 )
-  
+
 interface Option {
   label: string,
   isLink?: boolean,
@@ -55,7 +54,7 @@ const Option = ({ label, isLink, elementClassName, redirectTo }: Option) => {
     return (<div className="px-2 sm:px-5 py-5">
       <li className={elementClassName}>
         <Link to={redirectTo}>
-          <p className="cursor-pointer text-xs font-bold uppercase">{label}</p>
+          <p className="text-xs font-bold uppercase">{label}</p>
         </Link>
       </li>
     </div>)

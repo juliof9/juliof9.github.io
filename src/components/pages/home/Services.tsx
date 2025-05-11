@@ -7,12 +7,19 @@ import image6 from '../../../assets/images/services/consulting.jpg'
 
 const Services = () => {
   return (
-    <section id='services' className="w-full px-10 md:px-20">
-      <h2 className="text-4xl md:text-6xl font-extrabold text-#051923 mb-10">Servicios</h2>
-      <div className="grid justify-items-center grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-16">
-        {dummyServices.map((service) => (
-          <Service key={service.id} title={service.title} label={service.label} urlImg={service.urlImg} />
-        ))}
+    <section id="services" className="py-20 bg-gray-100">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 className="text-4xl font-extrabold text-center text-gray-900 mb-12">Servicios</h2>
+        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+          {dummyServices.map((service) => (
+            <Service
+              key={service.id}
+              title={service.title}
+              label={service.label}
+              urlImg={service.urlImg}
+            />
+          ))}
+        </div>
       </div>
     </section>
   )
@@ -25,15 +32,13 @@ interface ServiceDetails {
   label: string,
 }
 
-const Service = ({ title, label, urlImg }: ServiceDetails) => (
-  <div className="flex flex-col items-center">
-    <img className="object-cover h-80 w-80 sm:h-96 sm:w-96 rounded-3xl transition duration-300 ease-in-out hover:-translate-y-6" src={urlImg} alt={urlImg} />
-
-    <h3 className="text-2xl text-center font-bold py-2 text-service-color">
-      {title}
-    </h3>
-
-    <p className="font-semibold pb-5 text-center">{label}</p>
+const Service = (service: ServiceDetails) => (
+  <div key={service.id} className="cursor-pointer bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300">
+    <img src={service.urlImg} alt={service.title} className="w-full h-56 object-cover" />
+    <div className="p-6">
+      <h3 className="text-xl font-bold text-gray-900 mb-2">{service.title}</h3>
+      <p className="text-gray-700">{service.label}</p>
+    </div>
   </div>
 )
 
