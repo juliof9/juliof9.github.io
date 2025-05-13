@@ -23,7 +23,7 @@ jobs:
       - name: Build project
         run: npm run build
 
-      - name: List build directory
+      - name: Debug dist directory
         run: ls -la ./dist
 
       - name: Upload production-ready build files
