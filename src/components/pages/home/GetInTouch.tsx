@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { config } from "../../../config";
 import useMessages from "../../hooks/useMessages";
-import { Button, Col, Form, Input, Row } from "antd";
+import { Button, Col, Form, Input, InputNumber, Row } from "antd";
 import useRedirectTo from "../../hooks/useRedirectTo";
 import { MdHomeFilled, MdPerson, MdEmail, MdPhone, MdMessage } from "react-icons/md";
 
@@ -110,10 +110,12 @@ const GetInTouch = () => {
                 label={<span className="text-white">Número de contacto</span>}
                 {...config}
               >
-                <Input
+                <InputNumber
                   prefix={<MdPhone className="text-gray-400 mr-2" />}
-                  className="h-10"
+                  className="h-10 w-full"
                   placeholder="Ingresa tu número de contacto"
+                  maxLength={9}
+                  min={0}
                 />
               </Form.Item>
             </Col>

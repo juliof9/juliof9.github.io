@@ -5,3 +5,8 @@
 body {
   font-family: 'Caladea', sans-serif!important;
 }
+
+.ant-input-number {
+  display: flex!important;
+  align-items: center!important;
+}
